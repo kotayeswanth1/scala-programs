@@ -1,0 +1,1159 @@
+C:\Users\kotayaswanth>cd scala programs
+The system cannot find the path specified.
+
+C:\Users\kotayaswanth>cd ..
+
+C:\Users>cd scala programs
+The system cannot find the path specified.
+
+C:\Users>cd "scala programs"
+The system cannot find the path specified.
+
+C:\Users>cd ..
+
+C:\>cd "scala programs"
+
+C:\scala programs>scalac ScalaExamplehelloScala.scala.txt
+
+C:\scala programs>scalac ScalaExamplehelloScala.scala.txt
+
+C:\scala programs>scalac ScalaExamplehelloScala.scala
+source file not found: ScalaExamplehelloScala.scala
+1 error found
+
+C:\scala programs>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 5ABE-AB6F
+
+ Directory of C:\scala programs
+
+02-03-2023  10:33    <DIR>          .
+02-03-2023  10:34               892 ScalaExample$.class
+02-03-2023  10:34               324 ScalaExample.class
+02-03-2023  10:34               612 ScalaExample.tasty
+02-03-2023  10:34                95 ScalaExamplehelloScala.scala.txt
+               4 File(s)          1,923 bytes
+               1 Dir(s)  54,420,488,192 bytes free
+
+C:\scala programs>scalac ScalaExamplehelloScala2.scala
+source file not found: ScalaExamplehelloScala2.scala
+1 error found
+
+C:\scala programs>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 5ABE-AB6F
+
+ Directory of C:\scala programs
+
+02-03-2023  10:35    <DIR>          .
+02-03-2023  10:34               892 ScalaExample$.class
+02-03-2023  10:34               324 ScalaExample.class
+02-03-2023  10:34               612 ScalaExample.tasty
+02-03-2023  10:34                95 ScalaExamplehelloScala.scala.txt
+02-03-2023  10:35                95 ScalaExamplehelloScala2.scala.txt
+               5 File(s)          2,018 bytes
+               1 Dir(s)  54,394,601,472 bytes free
+
+C:\scala programs>scala ScalaExamplehelloScala2.scala.txt
+Ignoring spurious arguments: ScalaExamplehelloScala2.scala.txt
+Welcome to Scala 3.2.2 (1.8.0_202, Java Java HotSpot(TM) 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+
+scala> :quit
+
+C:\scala programs>scala ScalaExamplehelloScala3.scala
+-- [E040] Syntax Error: C:\scala programs\ScalaExamplehelloScala3.scala:5:0 ----
+5 |}
+  |^
+  |eof expected, but '}' found
+-- Warning: C:\scala programs\ScalaExamplehelloScala3.scala:2:3 ----------------
+2 |   def main(args:Array[String])={
+  |   ^
+  |   Line is indented too far to the right, or a `{` or `:` is missing
+1 warning found
+1 error found
+Errors encountered during compilation
+
+C:\scala programs>scalac ScalaExamplehelloScala3.scala
+-- [E040] Syntax Error: ScalaExamplehelloScala3.scala:5:0 ----------------------
+5 |}
+  |^
+  |eof expected, but '}' found
+-- Warning: ScalaExamplehelloScala3.scala:2:3 ----------------------------------
+2 |   def main(args:Array[String])={
+  |   ^
+  |   Line is indented too far to the right, or a `{` or `:` is missing
+1 warning found
+1 error found
+
+C:\scala programs>scalac ScalaExamplehelloScala3.scala
+
+C:\scala programs>scala ScalaExample
+hello Scala
+
+C:\scala programs>
+C:\scala programs>quit
+'quit' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\scala programs>:quit
+C:\scala programs>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 5ABE-AB6F
+
+ Directory of C:\scala programs
+
+02-03-2023  11:24    <DIR>          .
+02-03-2023  11:24                92 datatypesExamples.scala
+02-03-2023  10:38               887 ScalaExampl$.class
+02-03-2023  10:38               318 ScalaExampl.class
+02-03-2023  10:38               608 ScalaExampl.tasty
+02-03-2023  10:34               892 ScalaExample$.class
+02-03-2023  10:34               324 ScalaExample.class
+02-03-2023  10:34               612 ScalaExample.tasty
+02-03-2023  10:34                95 ScalaExamplehelloScala.scala.txt
+02-03-2023  10:35                95 ScalaExamplehelloScala2.scala.txt
+02-03-2023  10:38                94 ScalaExamplehelloScala3.scala
+              10 File(s)          4,017 bytes
+               1 Dir(s)  54,230,331,392 bytes free
+
+C:\scala programs>scalac datatypesExamples.scala
+
+C:\scala programs>scala datatypesExample
+Ignoring spurious arguments: datatypesExample
+Welcome to Scala 3.2.2 (1.8.0_202, Java Java HotSpot(TM) 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+
+scala> scala datatypesExamples
+     |
+
+C:\scala programs>scala datatypesExamples
+true
+
+C:\scala programs>scalac datatypesExample.scala
+-- [E006] Not Found Error: datatypesExample.scala:4:6 --------------------------
+4 |var i:short=32755
+  |      ^^^^^
+  |      Not found: type short
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+C:\scala programs>scalac datatypesExample.scala
+-- Error: datatypesExample.scala:9:1 -------------------------------------------
+9 |}Example
+  | ^^^^^^^
+  | end of toplevel definition expected but identifier found
+-- [E007] Type Mismatch Error: datatypesExample.scala:5:2 ----------------------
+5 |i=36777
+  |  ^^^^^
+  |  Found:    (36777 : Int)
+  |  Required: Short
+  |
+  | longer explanation available when compiling with `-explain`
+2 errors found
+
+C:\scala programs>scalac datatypesExample.scala
+-- Error: datatypesExample.scala:9:1 -------------------------------------------
+9 |}Example
+  | ^^^^^^^
+  | end of toplevel definition expected but identifier found
+-- [E007] Type Mismatch Error: datatypesExample.scala:5:2 ----------------------
+5 |i=36777
+  |  ^^^^^
+  |  Found:    (36777 : Int)
+  |  Required: Short
+  |
+  | longer explanation available when compiling with `-explain`
+2 errors found
+
+C:\scala programs>scalac datatypesExample.scala
+-- [E007] Type Mismatch Error: datatypesExample.scala:5:2 ----------------------
+5 |i=36777
+  |  ^^^^^
+  |  Found:    (36777 : Int)
+  |  Required: Short
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+C:\scala programs>scalac datatypesExample.scala
+-- [E007] Type Mismatch Error: datatypesExample.scala:5:2 ----------------------
+5 |i=36777
+  |  ^^^^^
+  |  Found:    (36777 : Int)
+  |  Required: Short
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+C:\scala programs>scalac datatypesExample.scala
+
+C:\scala programs>scala datatypesExample
+32755
+
+C:\scala programs>scalac datatypesExample.scala
+-- Error: datatypesExample.scala:7:10 ------------------------------------------
+7 |var j:Int=21474836454
+  |          ^^^^^^^^^^^
+  |          number too large
+1 error found
+
+C:\scala programs>scalac datatypesExample.scala
+-- Error: datatypesExample.scala:7:10 ------------------------------------------
+7 |var j:Int=2147483654
+  |          ^^^^^^^^^^
+  |          number too large
+1 error found
+
+C:\scala programs>scalac datatypesExample.scala
+
+C:\scala programs>scala datatypesExamples
+true
+
+C:\scala programs>scala datatypesExample
+32755
+2147483645
+922337203685477500
+
+C:\scala programs>scalac datatypesExample.scala
+
+C:\scala programs>scala datatypesExample
+32755
+2147483645
+922337203685477500
+32.275524
+32.55555555555556
+
+C:\scala programs>scalac datatypesExample.scala
+
+C:\scala programs>scala datatypesExamples
+true
+
+C:\scala programs>scala datatypesExample
+java.lang.ArrayIndexOutOfBoundsException: 0
+        at datatypesExample$.main(datatypesExample.scala:4)
+        at datatypesExample.main(datatypesExample.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at dotty.tools.runner.RichClassLoader$.run$extension$$anonfun$1(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.ScalaClassLoader$.asContext(ScalaClassLoader.scala:80)
+        at dotty.tools.runner.RichClassLoader$.dotty$tools$runner$RichClassLoader$$$asContext$extension(ScalaClassLoader.scala:18)
+        at dotty.tools.runner.RichClassLoader$.run$extension(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.CommonRunner.run(ObjectRunner.scala:23)
+        at dotty.tools.runner.CommonRunner.run$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.run(ObjectRunner.scala:48)
+        at dotty.tools.runner.CommonRunner.runAndCatch(ObjectRunner.scala:30)
+        at dotty.tools.runner.CommonRunner.runAndCatch$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.runAndCatch(ObjectRunner.scala:48)
+        at dotty.tools.MainGenericRunner$.run$1(MainGenericRunner.scala:215)        at dotty.tools.MainGenericRunner$.process(MainGenericRunner.scala:270)
+        at dotty.tools.MainGenericRunner$.main(MainGenericRunner.scala:281)
+        at dotty.tools.MainGenericRunner.main(MainGenericRunner.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at coursier.bootstrap.launcher.a.a(Unknown Source)
+        at coursier.bootstrap.launcher.Launcher.main(Unknown Source)
+
+C:\scala programs>scalac datatypesExample.scala
+
+C:\scala programs>scala datatypesExample
+java.lang.ArrayIndexOutOfBoundsException: 0
+        at datatypesExample$.main(datatypesExample.scala:4)
+        at datatypesExample.main(datatypesExample.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at dotty.tools.runner.RichClassLoader$.run$extension$$anonfun$1(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.ScalaClassLoader$.asContext(ScalaClassLoader.scala:80)
+        at dotty.tools.runner.RichClassLoader$.dotty$tools$runner$RichClassLoader$$$asContext$extension(ScalaClassLoader.scala:18)
+        at dotty.tools.runner.RichClassLoader$.run$extension(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.CommonRunner.run(ObjectRunner.scala:23)
+        at dotty.tools.runner.CommonRunner.run$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.run(ObjectRunner.scala:48)
+        at dotty.tools.runner.CommonRunner.runAndCatch(ObjectRunner.scala:30)
+        at dotty.tools.runner.CommonRunner.runAndCatch$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.runAndCatch(ObjectRunner.scala:48)
+        at dotty.tools.MainGenericRunner$.run$1(MainGenericRunner.scala:215)        at dotty.tools.MainGenericRunner$.process(MainGenericRunner.scala:270)
+        at dotty.tools.MainGenericRunner$.main(MainGenericRunner.scala:281)
+        at dotty.tools.MainGenericRunner.main(MainGenericRunner.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at coursier.bootstrap.launcher.a.a(Unknown Source)
+        at coursier.bootstrap.launcher.Launcher.main(Unknown Source)
+
+C:\scala programs>scala datatypesExample yaswanth
+yaswanth
+32755
+2147483645
+922337203685477500
+32.275524
+32.55555555555556
+
+C:\scala programs>scala datatypesExample 90
+90
+32755
+2147483645
+922337203685477500
+32.275524
+32.55555555555556
+
+C:\scala programs>scalac datatypesExample.scala
+
+C:\scala programs>scala datatypesExample yaswanth 90
+yaswanth
+yaswanth
+32755
+2147483645
+922337203685477500
+32.275524
+32.55555555555556
+
+C:\scala programs>scala datatypesExample
+java.lang.ArrayIndexOutOfBoundsException: 0
+        at datatypesExample$.main(datatypesExample.scala:4)
+        at datatypesExample.main(datatypesExample.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at dotty.tools.runner.RichClassLoader$.run$extension$$anonfun$1(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.ScalaClassLoader$.asContext(ScalaClassLoader.scala:80)
+        at dotty.tools.runner.RichClassLoader$.dotty$tools$runner$RichClassLoader$$$asContext$extension(ScalaClassLoader.scala:18)
+        at dotty.tools.runner.RichClassLoader$.run$extension(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.CommonRunner.run(ObjectRunner.scala:23)
+        at dotty.tools.runner.CommonRunner.run$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.run(ObjectRunner.scala:48)
+        at dotty.tools.runner.CommonRunner.runAndCatch(ObjectRunner.scala:30)
+        at dotty.tools.runner.CommonRunner.runAndCatch$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.runAndCatch(ObjectRunner.scala:48)
+        at dotty.tools.MainGenericRunner$.run$1(MainGenericRunner.scala:215)        at dotty.tools.MainGenericRunner$.process(MainGenericRunner.scala:270)
+        at dotty.tools.MainGenericRunner$.main(MainGenericRunner.scala:281)
+        at dotty.tools.MainGenericRunner.main(MainGenericRunner.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at coursier.bootstrap.launcher.a.a(Unknown Source)
+        at coursier.bootstrap.launcher.Launcher.main(Unknown Source)
+
+C:\scala programs>scala datatypesExample yaswanth
+yaswanth
+yaswanth
+32755
+2147483645
+922337203685477500
+32.275524
+32.55555555555556
+
+C:\scala programs>scalac datatypesExample.scala
+
+C:\scala programs>scala datatypesExample
+java.lang.ArrayIndexOutOfBoundsException: 0
+        at datatypesExample$.main(datatypesExample.scala:4)
+        at datatypesExample.main(datatypesExample.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at dotty.tools.runner.RichClassLoader$.run$extension$$anonfun$1(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.ScalaClassLoader$.asContext(ScalaClassLoader.scala:80)
+        at dotty.tools.runner.RichClassLoader$.dotty$tools$runner$RichClassLoader$$$asContext$extension(ScalaClassLoader.scala:18)
+        at dotty.tools.runner.RichClassLoader$.run$extension(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.CommonRunner.run(ObjectRunner.scala:23)
+        at dotty.tools.runner.CommonRunner.run$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.run(ObjectRunner.scala:48)
+        at dotty.tools.runner.CommonRunner.runAndCatch(ObjectRunner.scala:30)
+        at dotty.tools.runner.CommonRunner.runAndCatch$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.runAndCatch(ObjectRunner.scala:48)
+        at dotty.tools.MainGenericRunner$.run$1(MainGenericRunner.scala:215)        at dotty.tools.MainGenericRunner$.process(MainGenericRunner.scala:270)
+        at dotty.tools.MainGenericRunner$.main(MainGenericRunner.scala:281)
+        at dotty.tools.MainGenericRunner.main(MainGenericRunner.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at coursier.bootstrap.launcher.a.a(Unknown Source)
+        at coursier.bootstrap.launcher.Launcher.main(Unknown Source)
+
+C:\scala programs>scala datatypesExample yaswanth 98
+yaswanth
+98
+32755
+2147483645
+922337203685477500
+32.275524
+32.55555555555556
+
+C:\scala programs>scalac datatypesExample.scala
+
+C:\scala programs>scala datatypesExample 20
+20
+java.lang.ArrayIndexOutOfBoundsException: 1
+        at datatypesExample$.main(datatypesExample.scala:7)
+        at datatypesExample.main(datatypesExample.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at dotty.tools.runner.RichClassLoader$.run$extension$$anonfun$1(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.ScalaClassLoader$.asContext(ScalaClassLoader.scala:80)
+        at dotty.tools.runner.RichClassLoader$.dotty$tools$runner$RichClassLoader$$$asContext$extension(ScalaClassLoader.scala:18)
+        at dotty.tools.runner.RichClassLoader$.run$extension(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.CommonRunner.run(ObjectRunner.scala:23)
+        at dotty.tools.runner.CommonRunner.run$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.run(ObjectRunner.scala:48)
+        at dotty.tools.runner.CommonRunner.runAndCatch(ObjectRunner.scala:30)
+        at dotty.tools.runner.CommonRunner.runAndCatch$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.runAndCatch(ObjectRunner.scala:48)
+        at dotty.tools.MainGenericRunner$.run$1(MainGenericRunner.scala:215)        at dotty.tools.MainGenericRunner$.process(MainGenericRunner.scala:270)
+        at dotty.tools.MainGenericRunner$.main(MainGenericRunner.scala:281)
+        at dotty.tools.MainGenericRunner.main(MainGenericRunner.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at coursier.bootstrap.launcher.a.a(Unknown Source)
+        at coursier.bootstrap.launcher.Launcher.main(Unknown Source)
+
+C:\scala programs>scala datatypesExample yaswanth 90 25
+yaswanth
+90
+25
+32755
+2147483645
+922337203685477500
+32.275524
+32.55555555555556
+
+C:\scala programs>scalac Studentmarks.scala
+source file not found: Studentmarks.scala
+1 error found
+
+C:\scala programs>scalac Studentmarks.scala
+source file not found: Studentmarks.scala
+1 error found
+
+C:\scala programs>scalac Studentmarks1.scala
+-- [E040] Syntax Error: Studentmarks1.scala:5:13 -------------------------------
+5 |println("a:" "+a");
+  |             ^
+  |             ')' expected, but string literal found
+-- [E006] Not Found Error: Studentmarks1.scala:2:20 ----------------------------
+2 |def main(args:Array[string])={
+  |                    ^^^^^^
+  |                    Not found: type string
+  |
+  | longer explanation available when compiling with `-explain`
+2 errors found
+
+C:\scala programs>scalac Studentmarks1.scala
+-- [E006] Not Found Error: Studentmarks1.scala:2:20 ----------------------------
+2 |def main(args:Array[string])={
+  |                    ^^^^^^
+  |                    Not found: type string
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+C:\scala programs>scalac Studentmarks1.scala
+
+C:\scala programs>scala Studentmarks1
+Ignoring spurious arguments: Studentmarks1
+Welcome to Scala 3.2.2 (1.8.0_202, Java Java HotSpot(TM) 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+
+scala>
+
+C:\scala programs>scala Studentmarks1 30 40 60
+Ignoring spurious arguments: Studentmarks1, 30, 40, 60
+Welcome to Scala 3.2.2 (1.8.0_202, Java Java HotSpot(TM) 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+
+scala>
+
+C:\scala programs>scala Studentmarks1 yaswanth 30 40 60
+Ignoring spurious arguments: Studentmarks1, yaswanth, 30, 40, 60
+Welcome to Scala 3.2.2 (1.8.0_202, Java Java HotSpot(TM) 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+
+scala>
+
+C:\scala programs>scala Studentmarks1 yaswanth 30 40 60 130
+Ignoring spurious arguments: Studentmarks1, yaswanth, 30, 40, 60, 130
+Welcome to Scala 3.2.2 (1.8.0_202, Java Java HotSpot(TM) 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+
+scala>
+
+C:\scala programs>scala Studentmarks1 yaswanth 30 40 60
+Ignoring spurious arguments: Studentmarks1, yaswanth, 30, 40, 60
+Welcome to Scala 3.2.2 (1.8.0_202, Java Java HotSpot(TM) 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+
+scala>
+
+C:\scala programs>scalac Studentmarks1.scala
+
+C:\scala programs>scala Studentmarks1 yaswanth 50 30 50
+Ignoring spurious arguments: Studentmarks1, yaswanth, 50, 30, 50
+Welcome to Scala 3.2.2 (1.8.0_202, Java Java HotSpot(TM) 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+
+scala>
+
+C:\scala programs>scalac Studentmarks1.scala
+
+C:\scala programs>scalac Studentmarks1.scala
+
+C:\scala programs>scala Studentmarks1 yaswanth 30 40 60
+a:yaswanth
+maths:30
+chemistry:40
+english:60
+total:130
+percentage:43
+
+C:\scala programs>scalac Studentmarks1.scala
+-- Error: Studentmarks1.scala:34:0 ---------------------------------------------
+34 |else{
+   |^^^^
+   |end of statement expected but 'else' found
+-- [E006] Not Found Error: Studentmarks1.scala:25:0 ----------------------------
+25 |elseif(percentage>80.0f){
+   |^^^^^^
+   |Not found: elseif
+   |
+   | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: Studentmarks1.scala:28:0 ----------------------------
+28 |elseif(percentage>70.0f){
+   |^^^^^^
+   |Not found: elseif
+   |
+   | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: Studentmarks1.scala:31:0 ----------------------------
+31 |elseif(percentage>30.0f){
+   |^^^^^^
+   |Not found: elseif
+   |
+   | longer explanation available when compiling with `-explain`
+4 errors found
+
+C:\scala programs>scalac Studentmarks1.scala
+
+C:\scala programs>scala Studentmarks1 yaswanth 90 100 25
+a:yaswanth
+maths:90
+chemistry:100
+english:25
+total:215
+percentage:71
+third class
+
+C:\scala programs>scalac Studentmarks1.scala
+
+C:\scala programs>scala Studentmarks1 yaswanth 100 99 89
+a:yaswanth
+maths:100
+chemistry:99
+english:89
+total:288
+percentage:96
+first class
+
+C:\scala programs>scalac testRead.scala
+source file not found: testRead.scala
+1 error found
+
+C:\scala programs>scalac testRead.scala
+source file not found: testRead.scala
+1 error found
+
+C:\scala programs>scalac testRead.scala
+source file not found: testRead.scala
+1 error found
+
+C:\scala programs>scalac testRead1.scala
+-- [E040] Syntax Error: testRead1.scala:4:29 -----------------------------------
+4 |def main(args:Array[Strings]){
+  |                             ^
+  |                             '=' expected, but '{' found
+-- [E006] Not Found Error: testRead1.scala:4:20 --------------------------------
+4 |def main(args:Array[Strings]){
+  |                    ^^^^^^^
+  |                    Not found: type Strings
+  |
+  | longer explanation available when compiling with `-explain`
+2 errors found
+
+C:\scala programs>scalac testRead1.scala
+
+C:\scala programs>scala testRead1 yaswanth
+Ignoring spurious arguments: testRead1, yaswanth
+Welcome to Scala 3.2.2 (1.8.0_202, Java Java HotSpot(TM) 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+
+scala>
+
+C:\scala programs>scala testRead1
+Ignoring spurious arguments: testRead1
+Welcome to Scala 3.2.2 (1.8.0_202, Java Java HotSpot(TM) 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+
+scala>
+
+C:\scala programs>scalac testRead1.scala
+
+C:\scala programs>scala testRead1
+please enter the name
+yaswanth
+20
+the name entered is yaswanth
+
+C:\scala programs>scalac testRead1.scala
+
+C:\scala programs>scala testRead1
+please enter the name
+yaswanth
+please enter the marks
+20
+the name entered is yaswanth
+
+C:\scala programs>scalac Studentmarks1.scala
+-- [E006] Not Found Error: Studentmarks1.scala:8:16 ----------------------------
+8 |var name:String=readLine()
+  |                ^^^^^^^^
+  |                Not found: readLine
+  |
+  | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: Studentmarks1.scala:11:14 ---------------------------
+11 |var marks:Int=readInt()
+   |              ^^^^^^^
+   |              Not found: readInt
+   |
+   | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: Studentmarks1.scala:13:11 ---------------------------
+13 |var total =m+s+k;
+   |           ^
+   |           Not found: m
+   |
+   | longer explanation available when compiling with `-explain`
+3 errors found
+
+C:\scala programs>scalac Studentmarks1.scala
+-- Error: Studentmarks1.scala:21:20 --------------------------------------------
+21 |println("chemistry" "+k);
+   |                    ^
+   |                    unclosed string literal
+-- [E006] Not Found Error: Studentmarks1.scala:8:16 ----------------------------
+8 |var name:String=readLine()
+  |                ^^^^^^^^
+  |                Not found: readLine
+  |
+  | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: Studentmarks1.scala:11:14 ---------------------------
+11 |var marks:Int=readInt()
+   |              ^^^^^^^
+   |              Not found: readInt
+   |
+   | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: Studentmarks1.scala:13:8 ----------------------------
+13 |var m = readInt;
+   |        ^^^^^^^
+   |        Not found: readInt
+   |
+   | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: Studentmarks1.scala:17:8 ----------------------------
+17 |var s = readInt;
+   |        ^^^^^^^
+   |        Not found: readInt
+   |
+   | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: Studentmarks1.scala:20:8 ----------------------------
+20 |var k = readInt;
+   |        ^^^^^^^
+   |        Not found: readInt
+   |
+   | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: Studentmarks1.scala:24:17 ---------------------------
+24 |println("total:"+total);
+   |                 ^^^^^
+   |                 Not found: total
+   |
+   | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: Studentmarks1.scala:26:17 ---------------------------
+26 |var percentage =(total*100)/300;
+   |                 ^^^^^
+   |                 Not found: total
+   |
+   | longer explanation available when compiling with `-explain`
+8 errors found
+
+C:\scala programs>scalac Studentmarks1.scala
+-- Error: Studentmarks1.scala:24:20 --------------------------------------------
+24 |println("chemistry" "+k);
+   |                    ^
+   |                    unclosed string literal
+-- [E006] Not Found Error: Studentmarks1.scala:27:17 ---------------------------
+27 |println("total:"+total);
+   |                 ^^^^^
+   |                 Not found: total
+   |
+   | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: Studentmarks1.scala:29:17 ---------------------------
+29 |var percentage =(total*100)/300;
+   |                 ^^^^^
+   |                 Not found: total
+   |
+   | longer explanation available when compiling with `-explain`
+3 errors found
+
+C:\scala programs>scalac Studentmarks1.scala
+
+C:\scala programs>scala Studentmarks1
+java.lang.ArrayIndexOutOfBoundsException: 0
+        at Studentmarks1$.main(Studentmarks1.scala:7)
+        at Studentmarks1.main(Studentmarks1.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at dotty.tools.runner.RichClassLoader$.run$extension$$anonfun$1(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.ScalaClassLoader$.asContext(ScalaClassLoader.scala:80)
+        at dotty.tools.runner.RichClassLoader$.dotty$tools$runner$RichClassLoader$$$asContext$extension(ScalaClassLoader.scala:18)
+        at dotty.tools.runner.RichClassLoader$.run$extension(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.CommonRunner.run(ObjectRunner.scala:23)
+        at dotty.tools.runner.CommonRunner.run$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.run(ObjectRunner.scala:48)
+        at dotty.tools.runner.CommonRunner.runAndCatch(ObjectRunner.scala:30)
+        at dotty.tools.runner.CommonRunner.runAndCatch$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.runAndCatch(ObjectRunner.scala:48)
+        at dotty.tools.MainGenericRunner$.run$1(MainGenericRunner.scala:215)        at dotty.tools.MainGenericRunner$.process(MainGenericRunner.scala:270)
+        at dotty.tools.MainGenericRunner$.main(MainGenericRunner.scala:281)
+        at dotty.tools.MainGenericRunner.main(MainGenericRunner.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at coursier.bootstrap.launcher.a.a(Unknown Source)
+        at coursier.bootstrap.launcher.Launcher.main(Unknown Source)
+
+C:\scala programs>scalac Studentmarks1.scala
+
+C:\scala programs>scala Studentmarks1
+java.lang.ArrayIndexOutOfBoundsException: 0
+        at Studentmarks1$.main(Studentmarks1.scala:7)
+        at Studentmarks1.main(Studentmarks1.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at dotty.tools.runner.RichClassLoader$.run$extension$$anonfun$1(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.ScalaClassLoader$.asContext(ScalaClassLoader.scala:80)
+        at dotty.tools.runner.RichClassLoader$.dotty$tools$runner$RichClassLoader$$$asContext$extension(ScalaClassLoader.scala:18)
+        at dotty.tools.runner.RichClassLoader$.run$extension(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.CommonRunner.run(ObjectRunner.scala:23)
+        at dotty.tools.runner.CommonRunner.run$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.run(ObjectRunner.scala:48)
+        at dotty.tools.runner.CommonRunner.runAndCatch(ObjectRunner.scala:30)
+        at dotty.tools.runner.CommonRunner.runAndCatch$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.runAndCatch(ObjectRunner.scala:48)
+        at dotty.tools.MainGenericRunner$.run$1(MainGenericRunner.scala:215)        at dotty.tools.MainGenericRunner$.process(MainGenericRunner.scala:270)
+        at dotty.tools.MainGenericRunner$.main(MainGenericRunner.scala:281)
+        at dotty.tools.MainGenericRunner.main(MainGenericRunner.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at coursier.bootstrap.launcher.a.a(Unknown Source)
+        at coursier.bootstrap.launcher.Launcher.main(Unknown Source)
+
+C:\scala programs>scalac Studentmarks2.scala
+
+C:\scala programs>scalac Studentmarks2.scala
+
+C:\scala programs>scala Studentmarks2
+java.lang.ArrayIndexOutOfBoundsException: 0
+        at Studentmarks2$.main(Studentmarks2.scala:7)
+        at Studentmarks2.main(Studentmarks2.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at dotty.tools.runner.RichClassLoader$.run$extension$$anonfun$1(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.ScalaClassLoader$.asContext(ScalaClassLoader.scala:80)
+        at dotty.tools.runner.RichClassLoader$.dotty$tools$runner$RichClassLoader$$$asContext$extension(ScalaClassLoader.scala:18)
+        at dotty.tools.runner.RichClassLoader$.run$extension(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.CommonRunner.run(ObjectRunner.scala:23)
+        at dotty.tools.runner.CommonRunner.run$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.run(ObjectRunner.scala:48)
+        at dotty.tools.runner.CommonRunner.runAndCatch(ObjectRunner.scala:30)
+        at dotty.tools.runner.CommonRunner.runAndCatch$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.runAndCatch(ObjectRunner.scala:48)
+        at dotty.tools.MainGenericRunner$.run$1(MainGenericRunner.scala:215)        at dotty.tools.MainGenericRunner$.process(MainGenericRunner.scala:270)
+        at dotty.tools.MainGenericRunner$.main(MainGenericRunner.scala:281)
+        at dotty.tools.MainGenericRunner.main(MainGenericRunner.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at coursier.bootstrap.launcher.a.a(Unknown Source)
+        at coursier.bootstrap.launcher.Launcher.main(Unknown Source)
+
+C:\scala programs>scalac Studentmarks2.scala
+
+C:\scala programs>scala Studentmarks2
+please enter the name
+yaswanth
+please enter the marks
+20
+30
+maths: 30
+20
+science: 20
+30
+chemistry:30
+total:80
+percentage:26.666666
+pass
+
+C:\scala programs>scalac ternaryop.scala
+-- [E040] Syntax Error: ternaryop.scala:12:1 -----------------------------------
+12 |}
+   | ^
+   | '}' expected, but eof found
+-- [E006] Not Found Error: ternaryop.scala:2:0 ---------------------------------
+2 |defvmain(args:Array[String])={
+  |^^^^^^^^
+  |Not found: defvmain
+  |
+  | longer explanation available when compiling with `-explain`
+2 errors found
+
+C:\scala programs>scalac ternaryop.scala
+-- [E006] Not Found Error: ternaryop.scala:2:0 ---------------------------------
+2 |defmain(args:Array[String])={
+  |^^^^^^^
+  |Not found: defmain
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+C:\scala programs>scalac ternaryop.scala
+-- [E006] Not Found Error: ternaryop.scala:5:13 --------------------------------
+5 |var ip: Int =readInt()
+  |             ^^^^^^^
+  |             Not found: readInt
+  |
+  | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: ternaryop.scala:9:10 --------------------------------
+9 |case _ => printin("this is thrid line")
+  |          ^^^^^^^
+  |          Not found: printin
+  |
+  | longer explanation available when compiling with `-explain`
+2 errors found
+
+C:\scala programs>scalac ternaryop.scala
+-- [E006] Not Found Error: ternaryop.scala:5:13 --------------------------------
+5 |var ip: Int =readInt()
+  |             ^^^^^^^
+  |             Not found: readInt
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+C:\scala programs>scalac ternaryop.scala
+
+C:\scala programs>scala ternaryop
+Ignoring spurious arguments: ternaryop
+Welcome to Scala 3.2.2 (1.8.0_202, Java Java HotSpot(TM) 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+
+scala>
+
+C:\scala programs>scalac ternaryop.scala
+
+C:\scala programs>scala ternaryop
+please enter the value
+100
+this is thrid line
+
+C:\scala programs>scalac ternaryop.scala
+
+C:\scala programs>scala ternaryop
+please enter the value
+20
+this is thrid line
+
+C:\scala programs>scalac simpleCaleg.scala
+-- [E161] Naming Error: simpleCaleg.scala:12:4 ---------------------------------
+12 |var a =readInt();
+   |^^^^^^^^^^^^^^^^
+   |a is already defined as variable a
+   |
+   |Note that overloaded methods must all be defined in the same group of toplevel definitions
+-- [E006] Not Found Error: simpleCaleg.scala:13:15 -----------------------------
+13 |println("b = "+b);
+   |               ^
+   |               Not found: b
+   |
+   | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: simpleCaleg.scala:20:32 -----------------------------
+20 |case 1 => println("a + b = "+(a+b));
+   |                                ^
+   |                                Not found: b
+   |
+   | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: simpleCaleg.scala:21:32 -----------------------------
+21 |case 2 => println("a - b = "+(a-b));
+   |                                ^
+   |                                Not found: b
+   |
+   | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: simpleCaleg.scala:22:32 -----------------------------
+22 |case 3 => println("a * b = "+(a*b));
+   |                                ^
+   |                                Not found: b
+   |
+   | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: simpleCaleg.scala:23:32 -----------------------------
+23 |case 4 => println("a / b = "+(a/b));
+   |                                ^
+   |                                Not found: b
+   |
+   | longer explanation available when compiling with `-explain`
+6 errors found
+
+C:\scala programs>scalac simpleCaleg.scala
+-- [E161] Naming Error: simpleCaleg.scala:12:4 ---------------------------------
+12 |var a =readInt();
+   |^^^^^^^^^^^^^^^^
+   |a is already defined as variable a
+   |
+   |Note that overloaded methods must all be defined in the same group of toplevel definitions
+-- [E006] Not Found Error: simpleCaleg.scala:13:15 -----------------------------
+13 |println("b = "+b);
+   |               ^
+   |               Not found: b
+   |
+   | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: simpleCaleg.scala:20:32 -----------------------------
+20 |case 1 => println("a + b = "+(a+b));
+   |                                ^
+   |                                Not found: b
+   |
+   | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: simpleCaleg.scala:21:32 -----------------------------
+21 |case 2 => println("a - b = "+(a-b));
+   |                                ^
+   |                                Not found: b
+   |
+   | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: simpleCaleg.scala:22:32 -----------------------------
+22 |case 3 => println("a * b = "+(a*b));
+   |                                ^
+   |                                Not found: b
+   |
+   | longer explanation available when compiling with `-explain`
+-- [E006] Not Found Error: simpleCaleg.scala:23:32 -----------------------------
+23 |case 4 => println("a / b = "+(a/b));
+   |                                ^
+   |                                Not found: b
+   |
+   | longer explanation available when compiling with `-explain`
+6 errors found
+
+C:\scala programs>scalac simpleCaleg.scala
+
+C:\scala programs>scala simpleCaleg
+please enter the number:
+200
+a = 200
+please enter the number:
+30
+b = 30
+please enter the:
+ 1 for +1
+ 2 for -
+ 3 for *
+ 4 for /
+1
+a + b = 230
+
+C:\scala programs>scalac whileExample.scala
+-- [E040] Syntax Error: whileExample.scala:2:28 --------------------------------
+2 |def main(args:Array[String]){
+  |                            ^
+  |                            '=' expected, but '{' found
+1 error found
+
+C:\scala programs>scalac whileExample.scala
+-- [E040] Syntax Error: whileExample.scala:4:12 --------------------------------
+4 |while(i<100);
+  |            ^
+  |            'do' expected, but ';' found
+-- [E040] Syntax Error: whileExample.scala:10:1 --------------------------------
+10 |}
+   | ^
+   | '}' expected, but eof found
+2 errors found
+
+C:\scala programs>scalac whileExample.scala
+
+C:\scala programs>scala whileExample
+i =10
+i =11
+i =12
+i =13
+i =14
+i =15
+i =16
+i =17
+i =18
+i =19
+i =20
+i =21
+i =22
+i =23
+i =24
+i =25
+i =26
+i =27
+i =28
+i =29
+i =30
+i =31
+i =32
+i =33
+i =34
+i =35
+i =36
+i =37
+i =38
+i =39
+i =40
+i =41
+i =42
+i =43
+i =44
+i =45
+i =46
+i =47
+i =48
+i =49
+i =50
+i =51
+i =52
+i =53
+i =54
+i =55
+i =56
+i =57
+i =58
+i =59
+i =60
+i =61
+i =62
+i =63
+i =64
+i =65
+i =66
+i =67
+i =68
+i =69
+i =70
+i =71
+i =72
+i =73
+i =74
+i =75
+i =76
+i =77
+i =78
+i =79
+i =80
+i =81
+i =82
+i =83
+i =84
+i =85
+i =86
+i =87
+i =88
+i =89
+i =90
+i =91
+i =92
+i =93
+i =94
+i =95
+i =96
+i =97
+i =98
+i =99
+
+C:\scala programs>scalac whileExample.scala
+
+C:\scala programs>scala simpleCaleg
+please enter the number:
+java.io.EOFException: Console has reached end of input
+        at scala.io.StdIn.readInt(StdIn.scala:120)
+        at scala.io.StdIn.readInt$(StdIn.scala:117)
+        at scala.io.StdIn$.readInt(StdIn.scala:241)
+        at simpleCaleg$.main(simpleCaleg.scala:8)
+        at simpleCaleg.main(simpleCaleg.scala)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at dotty.tools.runner.RichClassLoader$.run$extension$$anonfun$1(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.ScalaClassLoader$.asContext(ScalaClassLoader.scala:80)
+        at dotty.tools.runner.RichClassLoader$.dotty$tools$runner$RichClassLoader$$$asContext$extension(ScalaClassLoader.scala:18)
+        at dotty.tools.runner.RichClassLoader$.run$extension(ScalaClassLoader.scala:36)
+        at dotty.tools.runner.CommonRunner.run(ObjectRunner.scala:23)
+        at dotty.tools.runner.CommonRunner.run$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.run(ObjectRunner.scala:48)
+        at dotty.tools.runner.CommonRunner.runAndCatch(ObjectRunner.scala:30)
+        at dotty.tools.runner.CommonRunner.runAndCatch$(ObjectRunner.scala:13)
+        at dotty.tools.runner.ObjectRunner$.runAndCatch(ObjectRunner.scala:48)
+        at dotty.tools.MainGenericRunner$.run$1(MainGenericRunner.scala:215)        at dotty.tools.MainGenericRunner$.process(MainGenericRunner.scala:270)
+        at dotty.tools.MainGenericRunner$.main(MainGenericRunner.scala:281)
+        at dotty.tscala simpleC             n(MainGenericRunner.scala)
+Ignoring spurious arguments: simpleCccessorImpl.invoke0(Native Method)
+Welcome to Scala 3.2.2 (1.8.0_202, Java Java HotSpot(TM) 64-Bit Server VM).I
+Type in expressions for evaluation. Or try :help.
+
+scala> Impl.java:43)
+
+scala>  at coursier.bootstrap.launcher.a.a(Unknown Source)
+
+scala> te batch job (Y/N)?
+
+scala> a programs>
+
+scala>
+
+scala>
+
+scala>
+
+C:\scala programs>scalac whileExample.scala
+
+C:\scala programs>scala whileExample
+i =10
+i =11
+i =12
+i =13
+i =14
+i =15
+i =16
+i =17
+i =18
+i =19

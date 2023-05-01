@@ -1,0 +1,25 @@
+object Studentmarks{
+def main(args:Array[string])={
+
+var a=args(0);
+println("a:" "+a");
+
+var m=args(1).toInt;
+println("maths:"+m);
+
+var s=args(2).toInt;
+println("chemistry:"+s);
+
+var k =args(3).toInt;
+println("english:"+k);
+
+var total =m+s+k;
+println("total:"+total);
+
+var percentage =(total*100)/300;
+println("percentage:"+percentage);
+
+}
+}
+
+
